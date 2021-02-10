@@ -16,6 +16,19 @@ Before downloading and installing zeek, we must download and install all the dep
 > wget -nv https://download.opensuse.org/repositories/security:zeek/xUbuntu_20.04/Release.key -O Release.key
 ###### Check that the repository is grabbed by typing ls. If it is installed you should see Release.key when you type ls
 >ls 
+###### Once you see Release.key, enter the following command to add the key
+> apt-key add -<Release.key
+###### After you add the key, you will get a response "OK". Once you get Okay, update the system again
+> apt-get update
+###### Once the updating process is complete, download the repository containing zeek 
+> sudo sh -c "echo 'deb http://download.opensuse.org/repositories/security:/zeek/xUbuntu_20.04/ /' > /etc/apt/sources.list.d/security:zeek.list"
+###### Once the repository is completed, update the system by typing 
+> apt-get update 
+###### Once the updating is completed, install zeek by typing the following command 
+> apt-get install zeek-lts 
+###### Once the installations is complete, check if Zeek is installed on the system by typing the following command
+> ls
+###### If you followed the instruction properly, you should have a  directory named zeek 
 
 
 
