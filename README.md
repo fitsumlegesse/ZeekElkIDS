@@ -6,6 +6,8 @@ Before downloading and installing zeek, we must download and install all the dep
 ###### Enter the super user password and press enter 
 ###### Once you enter the correct super user password check what your IP address is by typing and write it down for later user
 >ifconfig
+###### The following result will be displayed 
+![Image of Yaktocat](https://github.com/fitsumlegesse/ZeekElkIDS/Img/Screenshot from 2021-02-10 22-19-19.png)
 ###### Update the entire system before starting any instalation 
 >apt-get update
 ###### Once the updating process is complete, upgrade the system
